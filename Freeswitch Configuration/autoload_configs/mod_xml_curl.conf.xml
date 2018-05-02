@@ -1,0 +1,14 @@
+<configuration name="xml_curl.conf" description="cURL XML Gateway">
+<bindings>
+   <binding name="directory">
+           <param name="gateway-url" value="http://MYDOMAINNAME_FQDN:9000/fsapi/freeswitch-config" bindings="directory"/>
+           <param name="gateway-credentials" value="freeswitch:password"/>
+           <param name="disable-100-continue" value="true"/>
+   </binding>
+   <binding name="dialplan">
+           <param name="gateway-url" value="http://MYDOMAINNAME_FQDN:9000/fsapi/freeswitch-config" bindings="dialplan"/>
+           <param name="gateway-credentials" value="freeswitch:password"/>
+           <param name="disable-100-continue" value="true"/>
+   </binding>
+</bindings>
+</configuration>
